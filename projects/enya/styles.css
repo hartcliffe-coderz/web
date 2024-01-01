@@ -1,0 +1,24 @@
+body {
+    background-color:lavender
+}
+
+img {
+    width: 900px;
+}
+
+p {
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+h1{
+    font-size: 5rem;
+}
+
+
+.title-center {
+    text-align: center;
+    border: 15px dashed lightskyblue;
+}

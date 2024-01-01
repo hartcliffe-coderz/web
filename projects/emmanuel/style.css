@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    padding: 30px;
+    font-family: 'Rubik', sans-serif;
+    width: 1000px; 
+    margin: 0 auto;
+}
+body {
+    color: #ff0000;
+}
+img .left-image{
+    float: left;
+}
+img .right-image{
+    float: right;
+}
+p .clear-floats{
+    clear: both;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+.image-wrap{
+    width: 500px;
+    margin: 0 auto;
+}

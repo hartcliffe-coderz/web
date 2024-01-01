@@ -1,0 +1,130 @@
+body {
+    background-color: #182f3d;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* max-width: 1800px;
+  margin: 0 auto; */
+}
+
+a {
+    color: #9adf40;
+}
+
+.logo {
+    width: clamp(15rem, 15vw, 20rem);
+    margin: 5vh auto;
+}
+.head-photo {
+    max-width: 100vw;
+    /* background: url(coderz.webp); */
+    background-repeat: none;
+    background-size: contain;
+    /* height: 60vh; */
+    overflow: hidden;
+}
+
+.head-photo img {
+    max-width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+h2 {
+    font-size: 4rem;
+    color: #c1ff72;
+    text-align: center;
+
+    background: linear-gradient(
+        to right,
+        #c1ff72 20%,
+        #bcafda 30%,
+        #a07ef1 70%,
+        #9adf40 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: textShine 10s ease-in-out infinite alternate;
+}
+
+.intro {
+    max-width: 1200px;
+    color: white;
+    font-size: xx-large;
+    padding: 50px;
+    margin: 50px auto;
+    /* From https://css.glass */
+    /* background: #c2ff7211; */
+    background: #ffffff11;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #c2ff724d;
+    line-height: 1.65;
+    font-weight: 200;
+}
+
+main a {
+    color: whitesmoke;
+    min-width: 100px;
+    height: 40px;
+    background-color: rgb(28, 97, 114);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: xx-large;
+
+    border: 5px solid rgb(28, 97, 114);
+    transition: all 0.5s;
+}
+
+main a:hover {
+    background-color: rgba(28, 97, 114, 0.348);
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 0 auto;
+    }
+
+    main a {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 4rem;
+        padding: 0 2rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .intro {
+        font-size: 1.5rem;
+        padding: 30px;
+    }
+}

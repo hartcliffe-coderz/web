@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --toxic: #c1ff72;
+    --purple: #ceb6d7;
+    --dark-purple: #352f37;
+    --white: #fff;
+    --dark: #131325;
+
+    font-size: 62.5%;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+big,
+cite,
+code,
+em,
+img,
+small,
+strong,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+time {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(100%, 1rem + 2vw, 24px);
+    /* STOP MOVING AROUND! */
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    overscroll-behavior-y: none;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main {
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(5rem, 7vw, 12rem);
+    margin: clamp(5rem, 7vh, 14rem) 0;
+    color: #fff;
+    padding: 0 4rem;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Encode Sans', sans-serif;
+    margin: clamp(2rem, 7vw, 5rem) auto;
+    font-size: clamp(5rem, 6vw, 7rem);
+}
+
+h3 {
+    font-weight: 700;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 4rem;
+}
+
+p {
+    text-rendering: optimizeLegibility;
+    padding-top: 1.7rem 0;
+    letter-spacing: 0.2;
+    max-width: 1200px;
+    margin: 2rem auto;
+    font-size: clamp(1.8rem, 3vw, 2.1rem);
+}
+
+a {
+    font-weight: 700;
+    color: var(--dark-purple);
+}
+
+nav {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+footer > nav > ol {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer > nav > ol > li {
+    padding: 5vw 3vw;
+    font-weight: 700;
+}
+
+footer > nav > ol > li > a {
+    color: var(--purple);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.social > h4 {
+    padding: 0 2vw;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.social > a {
+    padding: 0 1rem;
+}
+
+#header {
+    height: 100vh;
+    /* max-width: fit-content; */
+    width: 100%;
+    background-image: url(bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    /* margin: 0 auto;
+    display: block;
+    padding-top: clamp(5rem, 5vw, 20rem);
+    padding-bottom: clamp(2rem, 2vw, 10rem); */
+    width: clamp(20rem, 20vw, 30rem);
+}
+
+.cta-btn {
+    background: var(white);
+    border-radius: 11px;
+    /* margin: clamp(2rem, 1vw, 5rem) auto; */
+    padding: 12px 30px;
+    color: #000;
+    display: block;
+    font: normal bold clamp(1.3rem, 5vw, 3.5rem) 'Encode Sans', sans-serif;
+    text-align: center;
+    border: 0;
+}
+
+#about {
+    background: var(--toxic);
+    padding: 2rem;
+}
+
+#about > article {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+#about > article > h2 {
+    color: var(--dark);
+}
+
+#about > article > p {
+    color: var(--dark);
+}
+
+/* CAMPS */
+
+#camps {
+    min-width: 100vw;
+
+    margin: 0 auto;
+    align-items: center;
+
+    max-width: 1200px;
+}
+
+.camp-card {
+    padding: 5rem 2rem 2rem 2rem;
+    margin: 0 auto;
+}
+
+.web {
+    background-color: var(--white);
+}
+
+.game {
+    background-color: var(--purple);
+    text-rendering: optimizeLegibility;
+}
+
+.article {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.toxic {
+    background-color: var(--toxic);
+    width: 100vw;
+}
+.white {
+    background-color: var(--white);
+    width: 100vw;
+}
+
+.coder {
+    width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+    margin-top: 2rem;
+    transform: translate(0, 0) rotate(0deg);
+    border-radius: 80px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    display: block;
+    margin: 0 auto;
+}
+
+.coder > img {
+    transform: translate(0, -371.36993185px) rotate(0deg);
+    margin: 0 auto;
+}
+
+#team {
+    background-color: var(--white);
+    color: var(--white);
+    padding: 4rem 2rem;
+}
+
+#team > h2 {
+    color: var(--dark);
+    margin: 0 auto;
+}
+
+.avatars {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 4rem auto;
+    overflow: hidden;
+}
+
+.avatar {
+    margin: 1.5rem clamp(2rem, 3vw, 6.65rem);
+    width: clamp(20rem, 22vw, 23rem);
+    height: clamp(20rem, 22vw, 23rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    filter: grayscale(100%) contrast(1.1) brightness(1.05);
+}
+
+.person {
+    padding: 2rem 0;
+}
+
+.person > h3,
+.person > h4 {
+    color: var(--dark);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#team > h4 {
+    line-height: 0rem;
+}
+
+footer {
+    background-color: var(--dark);
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > .logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: clamp(3rem, 6vw, 10rem);
+    padding-bottom: clamp(3rem, 6vw, 10rem);
+    width: clamp(15rem, 20vw, 30rem);
+}
+
+.vladi {
+    background-image: url(vladi.webp);
+}
+
+.neve {
+    background-image: url(neve.webp);
+}
+
+.alex {
+    background-image: url(alex.webp);
+}
+
+@media (max-width: 450px) {
+    .coder > img {
+        transform: translate(-175px, -371.36993185px) rotate(0deg);
+    }
+}
+
+@media (max-width: 810px) {
+    .avatars {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .avatar {
+        width: clamp(20rem, 70vw, 50rem);
+        height: clamp(20rem, 70vw, 50rem);
+    }
+
+    p {
+        font-size: 22px;
+    }
+}

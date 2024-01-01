@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+
+.big {
+    width: 40vw;
+    height: auto;
+}
+
+.bigger {
+    width: 70vw;
+    height: auto;
+}
